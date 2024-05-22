@@ -31,6 +31,36 @@
         "isDefault": true
       },
       "dependsOn": ["Prepare Windows"]
+    },
+    {
+      "type": "shell",
+      "label": "Prepare macOS",
+      "command": "sh",
+      "args": [
+        "-c",
+        "if [ ! -d '${workspaceFolder}/build' ]; then mkdir -p '${workspaceFolder}/build'; fi"
+      ]
+    },
+    {
+      "type": "shell",
+      "label": "Build macOS",
+      "command": "clang++",
+      "args": [
+        "-std=c++20",
+        "-g",
+        "-o",
+        "${workspaceFolder}/build/${fileBasenameNoExtension}",
+        "${file}"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": ["$gcc"],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "dependsOn": ["Prepare macOS"]
     }
   ]
 }

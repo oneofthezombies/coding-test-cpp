@@ -12,6 +12,19 @@
       "environment": [],
       "console": "integratedTerminal",
       "preLaunchTask": "Build Windows"
+    },
+    {
+      "name": "Debug macOS",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/build/${fileBasenameNoExtension}",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${workspaceFolder}",
+      "environment": [],
+      "externalConsole": false,
+      "MIMode": "lldb",
+      "preLaunchTask": "Build macOS"
     }
   ]
 }
