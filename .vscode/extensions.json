@@ -1,0 +1,8 @@
+{
+  "recommendations": [
+    "llvm-vs-code-extensions.vscode-clangd",
+    "esbenp.prettier-vscode",
+    "usernamehw.errorlens",
+    "ms-vscode.cpptools"
+  ]
+}

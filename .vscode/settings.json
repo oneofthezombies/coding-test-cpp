@@ -1,0 +1,17 @@
+{
+  "editor.fontFamily": "Inconsolata, monospace",
+  "editor.fontSize": 16,
+  "[cpp]": {
+    "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd",
+    "editor.formatOnSave": true
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "C_Cpp.intelliSenseEngine": "disabled"
+}
