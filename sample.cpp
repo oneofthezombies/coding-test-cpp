@@ -1,6 +1,9 @@
+/**
+ * Queue impl begin
+ */
+
 #include <condition_variable>
 #include <deque>
-#include <iostream>
 #include <mutex>
 #include <optional>
 
@@ -47,6 +50,11 @@ private:
   std::condition_variable cv;
 };
 
+/**
+ * Queue impl end
+ */
+
+#include <iostream>
 using namespace std;
 
 auto main(int argc, char **argv) -> int {
